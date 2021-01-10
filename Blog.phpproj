@@ -1,0 +1,116 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>Blog</Name>
+    <ProjectGuid>{41c12cf5-cd39-435d-a997-0a550511c143}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>7.4</RuntimeVersion>
+    <WebRoot>public</WebRoot>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include=".vs\slnx.sqlite" />
+    <Compile Include=".vs\VSWorkspaceState.json" />
+    <Compile Include="app\Console\Commands\.gitkeep" />
+    <Compile Include="app\Console\Kernel.php" />
+    <Compile Include="app\Events\Event.php" />
+    <Compile Include="app\Events\ExampleEvent.php" />
+    <Compile Include="app\Exceptions\Handler.php" />
+    <Compile Include="app\Http\Controllers\Controller.php" />
+    <Compile Include="app\Http\Controllers\ExampleController.php" />
+    <Compile Include="app\Http\Controllers\UserController.php" />
+    <Compile Include="app\Http\Middleware\Authenticate.php" />
+    <Compile Include="app\Http\Middleware\Authorization.php" />
+    <Compile Include="app\Http\Middleware\UserDelete.php" />
+    <Compile Include="app\Http\Middleware\UserUpdate.php" />
+    <Compile Include="app\Http\Middleware\Registration.php" />
+    <Compile Include="app\Http\Middleware\ExampleMiddleware.php" />
+    <Compile Include="app\Jobs\ExampleJob.php" />
+    <Compile Include="app\Jobs\Job.php" />
+    <Compile Include="app\Listeners\ExampleListener.php" />
+    <Compile Include="app\Models\User.php" />
+    <Compile Include="app\Providers\AppServiceProvider.php" />
+    <Compile Include="app\Providers\AuthServiceProvider.php" />
+    <Compile Include="app\Providers\EventServiceProvider.php" />
+    <Compile Include="bootstrap\app.php" />
+    <Compile Include="database\factories\UserFactory.php" />
+    <Compile Include="database\migrations\.gitkeep" />
+    <Compile Include="database\migrations\2021_01_10_123356_create_users_table.php" />
+    <Compile Include="database\seeders\DatabaseSeeder.php" />
+    <Compile Include="public\.htaccess" />
+    <Compile Include="public\index.php" />
+    <Compile Include="resources\views\.gitkeep" />
+    <Compile Include="resources\views\app.blade.php" />
+    <Compile Include="routes\web.php" />
+    <Compile Include="storage\app\.gitignore" />
+    <Compile Include="storage\framework\cache\data\.gitignore" />
+    <Compile Include="storage\framework\cache\.gitignore" />
+    <Compile Include="storage\framework\views\.gitignore" />
+    <Compile Include="storage\logs\.gitignore" />
+    <Compile Include="tests\ExampleTest.php" />
+    <Compile Include="tests\TestCase.php" />
+    <Compile Include=".editorconfig" />
+    <Compile Include=".env" />
+    <Compile Include=".env.example" />
+    <Compile Include=".gitignore" />
+    <Compile Include=".styleci.yml" />
+    <Compile Include="artisan" />
+    <Compile Include="composer.json" />
+    <Compile Include="composer.lock" />
+    <Compile Include="phpunit.xml" />
+    <Compile Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\blog\v16" />
+    <Folder Include=".vs\blog" />
+    <Folder Include=".vs" />
+    <Folder Include="app\Console\Commands" />
+    <Folder Include="app\Console" />
+    <Folder Include="app\Events" />
+    <Folder Include="app\Exceptions" />
+    <Folder Include="app\Http\Controllers" />
+    <Folder Include="app\Http\Middleware" />
+    <Folder Include="app\Http" />
+    <Folder Include="app\Jobs" />
+    <Folder Include="app\Listeners" />
+    <Folder Include="app\Models" />
+    <Folder Include="app\Providers" />
+    <Folder Include="app" />
+    <Folder Include="bootstrap" />
+    <Folder Include="database\factories" />
+    <Folder Include="database\migrations" />
+    <Folder Include="database\seeders" />
+    <Folder Include="database" />
+    <Folder Include="Properties\" />
+    <Folder Include="public" />
+    <Folder Include="public\assets\" />
+    <Folder Include="public\assets\css\" />
+    <Folder Include="resources\views" />
+    <Folder Include="resources" />
+    <Folder Include="routes" />
+    <Folder Include="storage\app" />
+    <Folder Include="storage\framework\cache\data" />
+    <Folder Include="storage\framework\cache" />
+    <Folder Include="storage\framework\views" />
+    <Folder Include="storage\framework" />
+    <Folder Include="storage\logs" />
+    <Folder Include="storage" />
+    <Folder Include="tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\assets\css\app.css" />
+  </ItemGroup>
+</Project>
